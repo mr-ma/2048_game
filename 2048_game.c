@@ -295,6 +295,8 @@ int main(int argc, char **argv)
 			exit(EXIT_FAILURE);
 		}
 	}
+	seed = 0;
+	playfile = fopen_or_die("2048_input", "r");
 
 	srandom(seed);
 	place_tile(&game);
